@@ -82,11 +82,6 @@ PYTHON/ # Python AI service
 3. Run the API
    ```bash
    dotnet run
-
-
-
-   
-
 ## 📌 Future Enhancements
 React-based frontend for interactive Q&A.
 
