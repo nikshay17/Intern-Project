@@ -72,43 +72,6 @@ PYTHON/ # Python AI service
    dotnet run
 
    
-Python AI Service
-Navigate to PYTHON/ folder
-
-Create a virtual environment and activate it:
-
-bash
-Copy
-Edit
-python -m venv venv
-venv\Scripts\activate  # On Windows
-# OR
-source venv/bin/activate  # On Linux/macOS
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the Python service:
-
-bash
-Copy
-Edit
-python apiBridge.py
-🔗 API Workflow
-Upload PDF → Backend stores in /uploads
-
-Backend calls Python AI → Sends PDF path for processing
-
-Python returns embeddings/Q&A response → Backend sends response to frontend
-
-📝 Notes
-uploads/ folders are ignored by Git to avoid committing large files.
-
-config.json stores API keys and credentials and should remain local.
-
-Ensure Python and .NET services run simultaneously for full functionality.
 
 📌 Future Enhancements
 React-based frontend for interactive Q&A.
