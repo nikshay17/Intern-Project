@@ -5,6 +5,8 @@ The backend is powered by **.NET Core** for file handling and API management, wh
 
 ---
 
+
+
 ## 🚀 Features
 
 - **PDF Upload & Management**  
@@ -23,6 +25,8 @@ The backend is powered by **.NET Core** for file handling and API management, wh
   - Can integrate with **OpenAI/Gemini** or other LLMs for response generation.
 
 ---
+
+
 
 ## 🏗️ Project Structure
 
@@ -45,6 +49,9 @@ PYTHON/ # Python AI service
 
 ---
 
+
+
+
 ## ⚡ Tech Stack
 
 **Backend (API & File Management)**  
@@ -55,9 +62,14 @@ PYTHON/ # Python AI service
 - Python 3.10+  
 - LangChain  
 - FAISS / Chroma for vector search  
-- OpenAI / Gemini LLM for Q&A  
+- OpenAI / Gemini LLM for Q&A
+
+
 
 ---
+
+
+
 
 ## ⚙️ Setup Instructions
 
@@ -70,6 +82,8 @@ PYTHON/ # Python AI service
 3. Run the API
    ```bash
    dotnet run
+
+
 
    
 
