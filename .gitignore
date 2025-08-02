@@ -1,0 +1,60 @@
+#########################
+# Python
+#########################
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+
+# Python logs
+*.log
+
+#########################
+# Visual Studio / .NET
+#########################
+
+# Build folders
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+#########################
+# OS / Temp files
+#########################
+
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+#########################
+# Project Specific
+#########################
+
+# Ignore any uploads or cache folders
+uploads/
+temp/
+cache/
+
+PdfQAApp/uploads
