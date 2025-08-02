@@ -25,3 +25,112 @@ The backend is powered by **.NET Core** for file handling and API management, wh
 ---
 
 ## 🏗️ Project Structure
+
+PdfQAApp/ # .NET Core backend
+├── Controllers/ # API Controllers
+├── Services/ # Service layer for handling business logic
+├── Helpers/ # Utility classes
+├── uploads/ # Temporary PDF uploads (ignored by Git)
+├── Program.cs
+└── PdfQAApp.csproj
+
+PYTHON/ # Python AI service
+├── apiBridge.py # Flask/FastAPI bridge for Q&A
+├── main.py # Main pipeline with LangChain
+├── uploads/ # Temporary storage for processed PDFs
+├── config.json # API keys & model config (ignored by Git)
+└── venv/ # Python virtual environment
+
+
+
+---
+
+## ⚡ Tech Stack
+
+**Backend (API & File Management)**  
+- ASP.NET Core (C# .NET 6/7)  
+- REST API architecture  
+
+**AI Service (Q&A & Embeddings)**  
+- Python 3.10+  
+- LangChain  
+- FAISS / Chroma for vector search  
+- OpenAI / Gemini LLM for Q&A  
+
+---
+
+## ⚙️ Setup Instructions
+
+### **Backend (.NET Core)**
+
+1. Navigate to `PdfQAApp/`
+2. Restore packages:
+   ```bash
+   dotnet restore
+3. Run the API
+   ```bash
+   dotnet run
+
+   
+Python AI Service
+Navigate to PYTHON/ folder
+
+Create a virtual environment and activate it:
+
+bash
+Copy
+Edit
+python -m venv venv
+venv\Scripts\activate  # On Windows
+# OR
+source venv/bin/activate  # On Linux/macOS
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the Python service:
+
+bash
+Copy
+Edit
+python apiBridge.py
+🔗 API Workflow
+Upload PDF → Backend stores in /uploads
+
+Backend calls Python AI → Sends PDF path for processing
+
+Python returns embeddings/Q&A response → Backend sends response to frontend
+
+📝 Notes
+uploads/ folders are ignored by Git to avoid committing large files.
+
+config.json stores API keys and credentials and should remain local.
+
+Ensure Python and .NET services run simultaneously for full functionality.
+
+📌 Future Enhancements
+React-based frontend for interactive Q&A.
+
+Multi-PDF querying and comparison.
+
+User authentication & session-based PDF history.
+
+Dockerized deployment for easier hosting.
+
+👨‍💻 Author
+Developed by Nikshay – A hybrid AI + .NET solution for smart document Q&A.
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you want:
+- Badges (like `.NET`, `Python`, `OpenAI`, etc.)  
+- A version with screenshots or demo GIF  
+- A public link preview to test the GitHub rendering  
+
+Happy building 🚀
