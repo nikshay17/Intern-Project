@@ -73,7 +73,7 @@ PYTHON/ # Python AI service
 
    
 
-📌 Future Enhancements
+## 📌 Future Enhancements
 React-based frontend for interactive Q&A.
 
 Multi-PDF querying and comparison.
